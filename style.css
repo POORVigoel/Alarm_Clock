@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background for a modern look */
+    color: #e0e0e0; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Navbar styling */
+nav {
+    background-color: #e11010;
+    color: white;
+    padding: 2em;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav h1 {
+    margin: 0;
+}
+
+/* Container for the clock and alarms */
+.container {
+    background: #333;
+    border-radius: 12px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+/* Clock face styling */
+#clock-face {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 20px;
+    background: #444;
+}
+
+/* Alarm input styling */
+.alarm-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.alarm-input input,
+.alarm-input select {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #222;
+    color: #e0e0e0;
+}
+
+.alarm-input button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4caf50;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.alarm-input button:hover {
+    background: #6f45a0;
+}
+
+/* Alarms list styling */
+#alarms {
+    list-style: none;
+    padding: 10px;
+    border: 40px;
+}
+
+#alarms li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #555;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#alarms .delete {
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#alarms .delete:hover {
+    background: #ee0905;
+}
